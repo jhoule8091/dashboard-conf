@@ -1,0 +1,128 @@
+{
+  "pageInfo": {
+    "title": "Titanforge Labs Home",
+    "description": "",
+    "navLinks": [],
+    "footerText": "",
+    "logo": "https://nextcloud.titanforgelabs.com/apps/files_sharing/publicpreview/s7y9AaeGC63Z2xP?file=/&fileId=318&x=1920&y=1080&a=true&etag=1d83435876aed034f797d398476834be"
+  },
+  "sections": [
+    {
+      "name": "CPU Usage",
+      "icon": "fas fa-tachometer",
+      "displayData": {
+        "rows": 2
+      },
+      "widgets": [
+        {
+          "type": "gl-current-cpu",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com"
+          },
+          "id": "0_765_glcurrentcpu"
+        },
+        {
+          "type": "gl-current-cores",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com"
+          },
+          "id": "1_765_glcurrentcores"
+        }
+      ],
+      "filteredItems": []
+    },
+    {
+      "name": "Disk Space",
+      "icon": "fas fa-hdd",
+      "widgets": [
+        {
+          "type": "gl-disk-space",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com"
+          },
+          "id": "0_919_gldiskspace"
+        }
+      ],
+      "filteredItems": []
+    },
+    {
+      "name": "Network Traffic",
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 2,
+        "collapsed": false,
+        "hideForGuests": false
+      },
+      "items": [],
+      "widgets": [
+        {
+          "type": "gl-network-traffic",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com"
+          },
+          "id": "0_1481_glnetworktraffic"
+        },
+        {
+          "type": "gl-alerts",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com"
+          },
+          "id": "1_1481_glalerts"
+        }
+      ],
+      "filteredItems": []
+    },
+    {
+      "name": "Memory Usage",
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      },
+      "items": [],
+      "widgets": [
+        {
+          "type": "gl-current-mem",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com"
+          },
+          "id": "0_1166_glcurrentmem"
+        },
+        {
+          "type": "gl-mem-history",
+          "options": {
+            "hostname": "https://r-glances.titanforgelabs.com",
+            "limit": "80"
+          },
+          "id": "1_1166_glmemhistory"
+        }
+      ],
+      "filteredItems": []
+    }
+  ],
+  "pages": [
+    {
+      "name": "Home",
+      "displayData": {
+        "hideForGuests": false
+      },
+      "path":"https://gist.githubusercontent.com/jhoule8091/3b8e19462c75983b9924f95cfc23b172/raw/6a8041be46004b9c4fd71edf10983f005b67c23e/home_conf.yml"
+    },
+    {
+      "name": "Monitoring",
+      "displayData": {
+        "hideForGuests": false
+      },
+      "path": "system-monitoring_conf.yml"
+    }
+  ],
+  "appConfig": {
+    "language": "en",
+    "layout": "auto",
+    "iconSize": "medium",
+    "theme": "one-dark"
+  }
+}
